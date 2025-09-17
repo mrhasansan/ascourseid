@@ -24,13 +24,13 @@ export function Navbar() {
           <NavLink to="/about" className={({ isActive }) => `${navClass} ${isActive ? "text-slate-900" : ""}`}>
             Tentang Kami
           </NavLink>
-          <NavLink to="/program" className={({ isActive }) => `${navClass} ${isActive ? "text-slate-900" : ""}`}>
+          <NavLink to="/programs" className={({ isActive }) => `${navClass} ${isActive ? "text-slate-900" : ""}`}>
             Program
           </NavLink>
-          <NavLink to="/testimoni" className={({ isActive }) => `${navClass} ${isActive ? "text-slate-900" : ""}`}>
+          <NavLink to="/testimonies" className={({ isActive }) => `${navClass} ${isActive ? "text-slate-900" : ""}`}>
             Testimoni
           </NavLink>
-          <Link to="/daftar" className="ml-1 rounded-full bg-blue-600 text-white px-4 py-2 font-semibold shadow">
+          <Link to="/register" className="ml-1 rounded-full bg-blue-600 text-white px-4 py-2 font-semibold shadow">
             Daftar
           </Link>
         </nav>
