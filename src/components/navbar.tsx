@@ -5,7 +5,7 @@ import { Logo } from "../components/logo";
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const navClass = "px-3 py-2 text-[17px] font-semibold text-blue-800 hover:text-blue-900";
+  const navClass = "px-3 py-2 text-[17px] font-semibold text-blue-900 hover:text-blue-950";
 
   return (
     <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
@@ -30,7 +30,7 @@ export function Navbar() {
           <NavLink to="/testimonies" className={({ isActive }) => `${navClass} ${isActive ? "text-slate-900" : ""}`}>
             Testimoni
           </NavLink>
-          <Link to="/register" className="ml-1 rounded-full bg-blue-600 text-white px-4 py-2 font-semibold shadow">
+          <Link to="/register" className="ml-1 rounded-full bg-blue-800 text-white px-4 py-2 font-semibold shadow hover:bg-blue-900">
             Daftar
           </Link>
         </nav>
@@ -75,7 +75,7 @@ export function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="block rounded-lg px-3 py-2 bg-blue-600 text-white" to="/daftar" onClick={() => setOpen(false)}>
+            <Link className="block rounded-lg px-3 py-2 bg-blue-800 text-white hover:bg-blue-900" to="/daftar" onClick={() => setOpen(false)}>
               Daftar
             </Link>
           </li>
