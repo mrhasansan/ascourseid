@@ -65,17 +65,17 @@ export function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="block rounded-lg px-3 py-2 hover:bg-slate-50" to="/program" onClick={() => setOpen(false)}>
+            <Link className="block rounded-lg px-3 py-2 hover:bg-slate-50" to="/programs" onClick={() => setOpen(false)}>
               Program
             </Link>
           </li>
           <li>
-            <Link className="block rounded-lg px-3 py-2 hover:bg-slate-50" to="/testimoni" onClick={() => setOpen(false)}>
+            <Link className="block rounded-lg px-3 py-2 hover:bg-slate-50" to="/testimonies" onClick={() => setOpen(false)}>
               Testimoni
             </Link>
           </li>
           <li>
-            <Link className="block rounded-lg px-3 py-2 bg-blue-800 text-white hover:bg-blue-900" to="/daftar" onClick={() => setOpen(false)}>
+            <Link className="block rounded-lg px-3 py-2 bg-blue-800 text-white hover:bg-blue-900" to="/register" onClick={() => setOpen(false)}>
               Daftar
             </Link>
           </li>
