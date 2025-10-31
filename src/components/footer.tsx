@@ -38,10 +38,16 @@ export function Footer() {
               <h3 className="mb-3 text-lg font-semibold underline decoration-2 decoration-slate-200/70 underline-offset-4">Contact</h3>
               <ul className="space-y-3 text-slate-100/90 text-sm">
                 <li className="flex items-center gap-2">
-                  <FaPhoneAlt /> +62 823‑2350‑1954
+                  <FaPhoneAlt />
+                  <a href="https://api.whatsapp.com/send/?phone=%2B6282323501954&text&type=phone_number&app_absent=0" className="hover:underline">
+                    +62 823-2350-1954
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <FaTiktok /> @ascourseid
+                  <FaTiktok />
+                  <a href="https://www.tiktok.com/@ascourseid" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    @ascourseid
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <FaEnvelope />
@@ -50,10 +56,16 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <FaInstagram /> @ascourseid
+                  <FaInstagram />
+                  <a href="https://www.instagram.com/ascourseid" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    @ascourseid
+                  </a>
                 </li>
                 <li className="flex items-center gap-2">
-                  <FaYoutube /> @ascourseid
+                  <FaYoutube />
+                  <a href="https://www.youtube.com/@ascourseid" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    @ascourseid
+                  </a>
                 </li>
               </ul>
             </div>
