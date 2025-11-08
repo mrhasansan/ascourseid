@@ -1,40 +1,55 @@
+import illustration1 from "../assets/ilustration1.png";
+import illustration2 from "../assets/ilustratio3.png";
+
 export function About() {
   return (
-    <section className="py-14">
-      <div className="mx-auto max-w-6xl px-5">
-        <h2 className="text-2xl font-semibold text-center mb-6">Tentang Kami</h2>
-
-        <div className="grid md:grid-cols-2 gap-5 items-center bg-slate-50 rounded-2xl p-6 border border-slate-200">
-          {/* Kolom kiri: Gambar acak dari Unsplash */}
-          <div className="flex justify-center">
-            <img src="https://www.21kschool.com/id/wp-content/uploads/sites/21/2024/09/Learning-Methods.png" alt="Ilustrasi Belajar" className="rounded-xl shadow-md object-cover w-full h-full max-h-96" />
+    <section className="w-full bg-gray-50">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-16 md:px-8 lg:px-10">
+        {/* Top: About Us */}
+        <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-center">
+          <div className="flex-1">
+            <p className="text-xl font-semibold tracking-[0.2em] uppercase text-[#0052cc]">Tentang Kami</p>
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600">
+              As Course adalah learning partner untuk siswa SMA dan mahasiswa yang ingin belajar dengan cara yang jelas, terarah, dan tidak berbelit. Dengan prinsip{" "}
+              <span className="font-semibold text-[#0052cc]">&quot;Make It Simple&quot;</span>, kami memecah materi sulit menjadi langkah yang mudah dipahami dan langsung bisa diterapkan.
+            </p>
           </div>
 
-          {/* Kolom kanan: Penjelasan */}
-          <div>
-            <p className="text-slate-700">
-              <strong>As Course</strong> adalah bimbingan belajar resmi untuk SMA dan mahasiswa dengan tagline <em>“Make it Simple.”</em> Kami hadir untuk membantu siswa menguasai pelajaran, lolos Olimpiade Sains Nasional, serta sukses
-              masuk perguruan tinggi melalui metode belajar yang ringkas, terstruktur, dan mudah dipahami.
-            </p>
-
-            <ul className="mt-4 list-disc list-inside text-slate-600 space-y-1">
-              <li>Konsep inti disajikan secara jelas, simpel, dan aplikatif.</li>
-              <li>Latihan bertahap dengan pembahasan mendalam khas Olimpiade.</li>
-              <li>Pembelajaran personal yang menyesuaikan kebutuhan setiap siswa.</li>
-              <li>Dibimbing langsung oleh pengajar berpengalaman di bidangnya.</li>
-            </ul>
+          {/* Foto / logo tim */}
+          <div className="flex-1">
+            <div className="w-full rounded-3xl bg-white shadow-md overflow-hidden">
+              <img src={illustration2} />
+            </div>
           </div>
         </div>
-        {/* Bidang yang Kami Latih */}
-        <div className="mt-5 text-center">
-          <h3 className="font-semibold text-slate-800 mb-4">Bidang yang Kami Latih</h3>
-          <ul className="flex flex-wrap justify-center gap-2 text-sm">
-            {["Matematika", "Fisika", "Kimia", "Biologi", "Informatika", "Astronomi", "Ekonomi", "Geografi", "Kebumian", "IPA", "IPS", "Bahasa Inggris", "Sosiologi", "Bahasa Indonesia", "Sejarah", "TPS", "TKA"].map((b) => (
-              <li key={b} className="rounded-full border border-slate-300 bg-white px-3 py-1 text-slate-700">
-                {b}
+
+        {/* Bottom: Mission + Detail */}
+        <div className="flex flex-col gap-8 rounded-3xl bg-white px-4 py-8 shadow-sm md:px-8 md:py-10 lg:flex-row lg:items-center lg:gap-10">
+          {/* Foto suasana belajar */}
+          <div className="flex-1 ">
+            <img src={illustration1} className="rounded-lg" />
+          </div>
+
+          {/* Teks misi + layanan */}
+          <div className="flex-1">
+            <h3 className="text-2xl font-semibold text-slate-900">Misi Kami</h3>
+            <p className="mt-1 text-sm md:text-base leading-relaxed text-slate-700">Membuat belajar jadi lebih cerdas dan sederhana.</p>
+            <p className="mt-3 text-sm md:text-base leading-relaxed text-slate-600">
+              Kami fokus pada pemahaman konsep inti dengan bahasa yang mudah, contoh yang relevan, dan latihan terukur, sehingga progres jelas dan kepercayaan diri siswa terus naik.
+            </p>
+            <p className="mt-3 text-sm md:text-base leading-relaxed text-slate-600">Karena itu, As Course dirancang untuk mendampingi tiga kebutuhan utama berikut:</p>
+            <ul className="mt-4 space-y-2 text-sm md:text-base leading-relaxed text-slate-600">
+              <li>
+                <span className="font-semibold text-[#0052cc]">Siswa SMA:</span> persiapan ujian sekolah, UTBK, dan seleksi mandiri.
               </li>
-            ))}
-          </ul>
+              <li>
+                <span className="font-semibold text-[#0052cc]">Mahasiswa:</span> pendampingan mata kuliah dan proyek akademik bidang sains, teknik, kesehatan, dan ekonomi.
+              </li>
+              <li>
+                <span className="font-semibold text-[#0052cc]">OSN SMA:</span> Matematika, Fisika, Kimia, Biologi, Astronomi, Informatika, Kebumian, Ekonomi, dan Geografi dengan kurikulum bertahap hingga level nasional.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
